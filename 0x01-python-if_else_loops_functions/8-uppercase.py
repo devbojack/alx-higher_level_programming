@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def uppercase(str):
     upper_string = ""
     for x in range(len(str)):
@@ -7,4 +7,4 @@ def uppercase(str):
             continue
         upper_string += str[x]
 
-    print(f"{upper_string}")
+    print("{}".format(upper_string))
