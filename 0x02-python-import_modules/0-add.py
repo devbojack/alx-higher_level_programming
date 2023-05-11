@@ -3,7 +3,7 @@ from add_0 import add
 
 if __name__ == '__main__':
     """
-    
+
     Prints calculations of 2 numbers
 
     """
