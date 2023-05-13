@@ -6,4 +6,4 @@ def element_at(my_list, idx):
     if idx <= my_len and idx >= 0:
         return (my_list[idx])
     else:
-        return (0)
+        return None
