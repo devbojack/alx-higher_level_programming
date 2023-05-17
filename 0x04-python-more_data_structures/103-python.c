@@ -1,5 +1,5 @@
+#include "/usr/include/python3.4/bytesobject.h"
 #include <stdio.h>
-#include "/usr/include/python3.4/Python.h"
 
 void print_hexn(const char *str, int n)i
 {
