@@ -1,20 +1,17 @@
 #!/usr/bin/python3
-"""Square file"""
+"""Square class"""
 
 
 class Square:
     """Square Representation"""
 
-    def __init__(self, size=0):
-        """Init a new square.
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new square.
 
         Args: size (int): Square size
+            position (int, int): Square position
         """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        self.size = size
         self.position = position
 
     @property
@@ -50,9 +47,6 @@ class Square:
 
     def my_print(self):
         """Print the square with the # character."""
-        for i in range(0, self.__size):
-            [print("#", end="") for j in range(self.__size)]
-            print("")
         if self.__size == 0:
             print("")
             return
