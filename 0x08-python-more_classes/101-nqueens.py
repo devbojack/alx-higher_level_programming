@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """N-queens puzzle solution
 
-Determines all possible solutions to placing NN 
+Determines all possible solutions to placing NN
 non-attacking queens on an NxN chessboard
 
 N must be an int >= 4
