@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-# finds a peak in a list of unsorted integers
+"""find_Peak class"""
+
+
 def find_peak(list_of_integers):
+    """Finds a peak in list of integers"""
     if not list_of_integers:
         return None
 
