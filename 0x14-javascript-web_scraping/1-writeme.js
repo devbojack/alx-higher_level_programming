@@ -1,20 +1,9 @@
 #!/usr/bin/node
 
-const fs = require('fs').promises;
+const fs = require('fs');
 
-(async () => {
-  try {
-    const filePath = process.argv[2];
-    const content = process.argv[3];
-
-    if (!filePath || !content) {
-      console.error('Usage: ./script.js <file-path> <content>');
-      return;
-    }
-
-    await fs.writeFile(filePath, content, 'utf8');
-    console.log('File written successfully.');
-  } catch (err) {
-    console.error(err);
+fs.writeFile(process.argv[2], process.argv[3], 'utf8', function (err) {
+  if (err) {
+    console.log(err);
   }
-})();
+});
